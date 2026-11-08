@@ -1,0 +1,47 @@
+{
+  "format": "aitextdetection-reference-v1",
+  "status": "verified_derivative",
+  "origin": {
+    "parent_run_manifest_sha256": "b36a8a834b80452cdd66e09be1d80c85476bbae903f4679b246cba5b480bd285",
+    "operation": "Retain comparison tables only; no saved model is imported."
+  },
+  "source_dataset_manifest_sha256": "14c7b0ec5fa01b8a0375f2297bbd6e0cedf7bfefa3efc20960f7fafc7252122f",
+  "parameters": {
+    "minimum_words": 200,
+    "matched_seeds": [
+      42,
+      43,
+      44
+    ],
+    "C_values": [
+      0.5,
+      1.0,
+      2.0
+    ],
+    "target_validation_fpr": 0.05,
+    "bootstrap_resamples": 1000,
+    "bootstrap_seed": 20261024
+  },
+  "environment": {
+    "python": "3.15.0",
+    "system": "Darwin",
+    "machine": "arm64",
+    "packages": {
+      "numpy": "2.5.4",
+      "scipy": "1.18.1",
+      "scikit-learn": "1.9.1",
+      "joblib": "1.6.0",
+      "requests": "2.34.2",
+      "matplotlib": "3.11.2",
+      "streamlit": "1.66.0",
+      "pandas": "3.0.6"
+    }
+  },
+  "scope": "exploratory_previously_observed_tests",
+  "files": {
+    "contrasts.csv": "b6fcc49bf641bcbca1974cc03140010ef3f1b3ad91c124dbf1cceea16e9aa8f3",
+    "metrics.csv": "67d5d34c8215ecc76667b7d1c6e7bc25bf28410a45d73dc86b48943c503e5c9a",
+    "predictions.csv": "776e3598eedf25eba1c6c046b7266cdf4032a03640f889573d5c428f20101748"
+  },
+  "dataset_manifest_sha256": "a21d8a6742588eebc7f588e7a81a22fea06591939f35d5fb96ec872efe74ffe0"
+}

@@ -1,0 +1,117 @@
+{
+  "seed": 42,
+  "data": {
+    "dataset": "liamdugan/raid",
+    "split": "train",
+    "source_url": "https://dataset.raid-bench.xyz/train_none.csv",
+    "raw_filename": "train_none.csv",
+    "sample_size": 10000,
+    "domains": [
+      "news",
+      "reviews",
+      "wiki"
+    ],
+    "models": [
+      "chatgpt",
+      "gpt4",
+      "mistral"
+    ],
+    "attack": "none",
+    "decoding": "greedy",
+    "repetition_penalty": "no",
+    "min_chars": 40,
+    "candidate_multiplier": 2,
+    "max_download_bytes": 1200000000,
+    "source_group_quotas": {
+      "news": 1000,
+      "reviews": 750,
+      "wiki": 750
+    },
+    "exclude_pilot": {
+      "manifest": "configs/pilot_exclusions.json",
+      "sha256": "6abfb9023a117dd6982901ec2b5046189e15f211b6c9e6a722dca0170105164f"
+    }
+  },
+  "split": {
+    "protocol_version": "source-group-v1",
+    "seen_domains": [
+      "news",
+      "reviews"
+    ],
+    "held_out_domain": "wiki",
+    "seen_generators": [
+      "chatgpt",
+      "gpt4"
+    ],
+    "held_out_generator": "mistral",
+    "fractions": {
+      "train": 0.5,
+      "validation": 0.3,
+      "test": 0.2
+    },
+    "near_duplicate": {
+      "shingle_words": 5,
+      "jaccard_threshold": 0.85,
+      "min_tokens": 30,
+      "max_records": 12000,
+      "method": "prefix"
+    },
+    "min_validation_humans": 500
+  },
+  "training": {
+    "protocol_version": "word-baseline-v1",
+    "selection_metric": "validation_auroc",
+    "C_values": [
+      0.5,
+      1.0,
+      2.0
+    ],
+    "decision_threshold": 0.5,
+    "word": {
+      "ngram_range": [
+        1,
+        2
+      ],
+      "max_features": 30000,
+      "min_df": 2,
+      "sublinear_tf": true
+    },
+    "char": {
+      "analyzer": "char",
+      "ngram_range": [
+        3,
+        5
+      ],
+      "max_features": 50000,
+      "min_df": 2,
+      "sublinear_tf": true
+    },
+    "combined": {
+      "normalization": "l2"
+    },
+    "logistic_regression": {
+      "solver": "lbfgs",
+      "class_weight": "balanced",
+      "max_iter": 1000,
+      "tol": 0.0001
+    }
+  },
+  "evaluation": {
+    "protocol_version": "heldout-evaluation-v1",
+    "default_threshold": 0.5,
+    "target_validation_fpr": 0.05,
+    "word_count_bin_edges": [
+      0,
+      100,
+      200,
+      400,
+      800
+    ],
+    "error_examples_per_type": 10
+  },
+  "experiment": {
+    "name": "formal-10000-v1",
+    "scope": "formal experiment following the 1000-record pilot",
+    "precommitment": "Use 10000 new records; preserve all prior pilot sources; select models and thresholds on formal validation only."
+  }
+}

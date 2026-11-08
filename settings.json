@@ -1,0 +1,21 @@
+{
+  "version": "aitextdetection-study-v1",
+  "scope": "exploratory_previously_observed_tests",
+  "minimum_words": 200,
+  "matched_seeds": [
+    42,
+    43,
+    44
+  ],
+  "C_values": [
+    0.5,
+    1.0,
+    2.0
+  ],
+  "target_validation_fpr": 0.05,
+  "bootstrap_resamples": 1000,
+  "bootstrap_seed": 20261024,
+  "primary_question": "Does adding AI-output minimum-length eligibility to human-only source eligibility change combined detector wiki AUROC at the same domain/source budget?",
+  "primary_comparison": "combined: group_200 minus human_group_budget_42; identical unfiltered test_domain records; AUROC; other seeds are sensitivity controls",
+  "confirmation_status": "Exploration on previously observed tests, not independent confirmation, causal identification, or established publication novelty."
+}

@@ -1,0 +1,46 @@
+{
+  "format": "aitextdetection-dataset-v1",
+  "status": "verified_derivative",
+  "origin": {
+    "dataset": "liamdugan/raid",
+    "upstream_split": "train",
+    "parent_run_manifest_sha256": "14c7b0ec5fa01b8a0375f2297bbd6e0cedf7bfefa3efc20960f7fafc7252122f",
+    "parent_split_manifest_sha256": "8eec626634e4f8629a52890ef5b1ed43fefefd3d178c978a5a12c9b7ce7c3a79",
+    "retained_original_files": {
+      "dataset_config.json": {
+        "original_relative_path": "config.json",
+        "sha256": "658587aa68a057b8825c9a5a054f4f875390fa81b7840409e4dfc135a0faf18c"
+      },
+      "train.csv": {
+        "original_relative_path": "data/processed/train.csv",
+        "sha256": "3a73cfb22109dff9a89b4f129e08666b871aef0fbe1d4cb7bd3dacae1da77742"
+      },
+      "validation.csv": {
+        "original_relative_path": "data/processed/validation.csv",
+        "sha256": "09cddd6a55cbb3ee51f6667fc647a5c4ca35ec5ffd03017171500a02f78431c9"
+      },
+      "test_id.csv": {
+        "original_relative_path": "data/processed/test_id.csv",
+        "sha256": "f8bc8d4f4f56afc66756445e7bff14a325df9b6fdaec42e1116f85baa61d7b57"
+      },
+      "test_domain.csv": {
+        "original_relative_path": "data/processed/test_domain.csv",
+        "sha256": "b596920836a053989965372f3dd073ef60f849703345cb6e714fde981c2d8fb2"
+      },
+      "test_generator.csv": {
+        "original_relative_path": "data/processed/test_generator.csv",
+        "sha256": "ccaea9ea4a7689909b9f5e3183d48aeb418813d17a0ed14d6f4aceba58f0f445"
+      }
+    },
+    "operation": "Five CSV files and dataset_config.json copied byte-for-byte; split_manifest.json is a declared reduced derivative."
+  },
+  "files": {
+    "dataset_config.json": "658587aa68a057b8825c9a5a054f4f875390fa81b7840409e4dfc135a0faf18c",
+    "split_manifest.json": "67e09523f05d20d6b98e340a578948ce116f90c44ca6ca89a98960d44cd36ed7",
+    "test_domain.csv": "b596920836a053989965372f3dd073ef60f849703345cb6e714fde981c2d8fb2",
+    "test_generator.csv": "ccaea9ea4a7689909b9f5e3183d48aeb418813d17a0ed14d6f4aceba58f0f445",
+    "test_id.csv": "f8bc8d4f4f56afc66756445e7bff14a325df9b6fdaec42e1116f85baa61d7b57",
+    "train.csv": "3a73cfb22109dff9a89b4f129e08666b871aef0fbe1d4cb7bd3dacae1da77742",
+    "validation.csv": "09cddd6a55cbb3ee51f6667fc647a5c4ca35ec5ffd03017171500a02f78431c9"
+  }
+}

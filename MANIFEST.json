@@ -1,0 +1,130 @@
+{
+  "format": "aitextdetection-package-v1",
+  "created_date": "2026-11-08",
+  "files": {
+    ".gitattributes": {
+      "sha256": "1679d302be373a9c4af0e01d7703cbaca3f60858b9694a78be624c63640f52bc",
+      "bytes": 86
+    },
+    ".gitignore": {
+      "sha256": "9173ec364b3ba8285b83fd9bf31f21eb25cf003a71539ebbdb0d924721f4873c",
+      "bytes": 64
+    },
+    "CONFIGURATION.md": {
+      "sha256": "26a651e4076b39e4da194af99f926766fe39234afb4ad5465bdfa017dd7cfc66",
+      "bytes": 4459
+    },
+    "README.md": {
+      "sha256": "53455004bb45a24560c1a81eac612d6b1c9fae6171c7f33e67a92fc223ce3c26",
+      "bytes": 9630
+    },
+    "VALIDATION.md": {
+      "sha256": "6b9a22764e2f40f6dff1fe628867e1ffc9912ffd488c6ce80b4d2eb49b022b73",
+      "bytes": 2435
+    },
+    "aitextdetection/__init__.py": {
+      "sha256": "62f0746b3de0ee0fed1aa3824665895457604b5c05c86e7d4c69e654727ac21c",
+      "bytes": 212
+    },
+    "aitextdetection/bootstrap.py": {
+      "sha256": "16e062e6f8828702b6985a7479f41eb01e8f6e09d49bc473a504ad98e54d36e2",
+      "bytes": 12741
+    },
+    "aitextdetection/classifiers.py": {
+      "sha256": "f78d6f3602cb39f1479348690af9a47324c5857ada08eb2d81363a5edddd541e",
+      "bytes": 20833
+    },
+    "aitextdetection/dataset.py": {
+      "sha256": "9208eb0668f63a3027578dd42e50dc0269349fb3c941ddafd2378f47dce711fa",
+      "bytes": 24131
+    },
+    "aitextdetection/experiment.py": {
+      "sha256": "15d243dd0e81408d0c4dd0cdcd6666636e2dd4951e7d6bce2e62e1c63561631f",
+      "bytes": 22559
+    },
+    "aitextdetection/reporting.py": {
+      "sha256": "19b6fe3b7f555bc11b8cfb85b8d40c998526b4b12462fbb64f37b98dedf68fbb",
+      "bytes": 34698
+    },
+    "aitextdetection/sampling.py": {
+      "sha256": "db5440344684a84ed3865dc993e753dfa953c6cc3cf9b64d22a8f3e4613098a9",
+      "bytes": 12204
+    },
+    "aitextdetection/verification.py": {
+      "sha256": "13bd789d392d28bbd98913e2abb3ef84d3d7a8ac80e120394f592e71b84e16e2",
+      "bytes": 4838
+    },
+    "check_project.py": {
+      "sha256": "b5aa625958a91a250d7197ed0dac213079a774316faa41e4f8ea04d327ea6e36",
+      "bytes": 13463
+    },
+    "data/README.md": {
+      "sha256": "d2b84c25f841fca26f3a5126728e7e0c149699794665f1ea11eb7e3dba81e3ba",
+      "bytes": 5203
+    },
+    "data/dataset_config.json": {
+      "sha256": "658587aa68a057b8825c9a5a054f4f875390fa81b7840409e4dfc135a0faf18c",
+      "bytes": 2554
+    },
+    "data/manifest.json": {
+      "sha256": "a21d8a6742588eebc7f588e7a81a22fea06591939f35d5fb96ec872efe74ffe0",
+      "bytes": 2299
+    },
+    "data/split_manifest.json": {
+      "sha256": "67e09523f05d20d6b98e340a578948ce116f90c44ca6ca89a98960d44cd36ed7",
+      "bytes": 408207
+    },
+    "data/test_domain.csv": {
+      "sha256": "b596920836a053989965372f3dd073ef60f849703345cb6e714fde981c2d8fb2",
+      "bytes": 5185492
+    },
+    "data/test_generator.csv": {
+      "sha256": "ccaea9ea4a7689909b9f5e3183d48aeb418813d17a0ed14d6f4aceba58f0f445",
+      "bytes": 1596153
+    },
+    "data/test_id.csv": {
+      "sha256": "f8bc8d4f4f56afc66756445e7bff14a325df9b6fdaec42e1116f85baa61d7b57",
+      "bytes": 2567153
+    },
+    "data/train.csv": {
+      "sha256": "3a73cfb22109dff9a89b4f129e08666b871aef0fbe1d4cb7bd3dacae1da77742",
+      "bytes": 6382747
+    },
+    "data/validation.csv": {
+      "sha256": "09cddd6a55cbb3ee51f6667fc647a5c4ca35ec5ffd03017171500a02f78431c9",
+      "bytes": 3850037
+    },
+    "reference/contrasts.csv": {
+      "sha256": "b6fcc49bf641bcbca1974cc03140010ef3f1b3ad91c124dbf1cceea16e9aa8f3",
+      "bytes": 92696
+    },
+    "reference/manifest.json": {
+      "sha256": "831953baa735d0c701d8c1ed832b687a1495780d8a48d408f32670c94e82444b",
+      "bytes": 1418
+    },
+    "reference/metrics.csv": {
+      "sha256": "67d5d34c8215ecc76667b7d1c6e7bc25bf28410a45d73dc86b48943c503e5c9a",
+      "bytes": 35624
+    },
+    "reference/predictions.csv": {
+      "sha256": "776e3598eedf25eba1c6c046b7266cdf4032a03640f889573d5c428f20101748",
+      "bytes": 19976504
+    },
+    "requirements-lock.txt": {
+      "sha256": "177eb62f17f2c01778eed252e835906e43566dd77ff4943df47e90876ee8d45a",
+      "bytes": 294
+    },
+    "settings.json": {
+      "sha256": "0a3ae2c4fe021ea1fa1bed66c4126438c5dca836513beb49f61e11675115fda8",
+      "bytes": 808
+    },
+    "tests/__init__.py": {
+      "sha256": "1a1ecee9f84ee6fd9be7bb9f0afa0d9610fc9e78be05bfc3f4a48260388d0bfc",
+      "bytes": 31
+    },
+    "tests/test_integrity.py": {
+      "sha256": "503ebe7ac85990d700082eb629fc0d54275ee259265b6ce5c1757e55a0b7e078",
+      "bytes": 11308
+    }
+  }
+}
