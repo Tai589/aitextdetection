@@ -14,9 +14,21 @@
       "sha256": "26a651e4076b39e4da194af99f926766fe39234afb4ad5465bdfa017dd7cfc66",
       "bytes": 4459
     },
+    "LICENSE": {
+      "sha256": "c0dfded1909cc2ed7f8bc6bc2d816c114af7d0f17c7fa9f8e935fe8abfb22020",
+      "bytes": 1063
+    },
+    "LICENSES/RAID-MIT.txt": {
+      "sha256": "ffc5aafea5bd37371f9977e90efde0327561150d6619a828bcf6b8f3b4230560",
+      "bytes": 1068
+    },
     "README.md": {
-      "sha256": "53455004bb45a24560c1a81eac612d6b1c9fae6171c7f33e67a92fc223ce3c26",
-      "bytes": 9630
+      "sha256": "28b7586755a545eab7201a017a3c645d531f878609917701f9c32925a46ff825",
+      "bytes": 10387
+    },
+    "THIRD_PARTY_NOTICES.md": {
+      "sha256": "1cb4e95b88b78c764bb2e3aa8afd722e196996bb8412942ccfe57097cddb6f22",
+      "bytes": 1823
     },
     "VALIDATION.md": {
       "sha256": "6b9a22764e2f40f6dff1fe628867e1ffc9912ffd488c6ce80b4d2eb49b022b73",
@@ -59,8 +71,8 @@
       "bytes": 13463
     },
     "data/README.md": {
-      "sha256": "d2b84c25f841fca26f3a5126728e7e0c149699794665f1ea11eb7e3dba81e3ba",
-      "bytes": 5203
+      "sha256": "1fa201f572d12f1f7b58d69cc7fad887094827bccda2748a7f468b8fb908bef4",
+      "bytes": 5548
     },
     "data/dataset_config.json": {
       "sha256": "658587aa68a057b8825c9a5a054f4f875390fa81b7840409e4dfc135a0faf18c",

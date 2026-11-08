@@ -2,6 +2,8 @@
 
 英语 AI 文本检测与来源筛选敏感性研究。
 
+公开仓库：[Tai589/aitextdetection](https://github.com/Tai589/aitextdetection)。
+
 本项目比较两类模型：只看文本长度的逻辑回归，以及结合词语、字符 TF-IDF 的逻辑回归。研究重点是：训练来源的准入规则改变后，模型在新来源、新领域和新生成器上的表现会怎样变化。
 
 项目使用随包提供的 RAID 冻结数据，不需要下载原始大文件，也不需要 GPU 或模型 API。数据已经按来源及近重复组件划分。这里的测试场景来自 RAID 的公开 `train` 分区经过自定义划分，不是 RAID 官方测试榜单成绩。
@@ -13,6 +15,10 @@ aitextdetection/
 ├── README.md                    # 操作说明
 ├── CONFIGURATION.md             # 配置字段解释
 ├── VALIDATION.md                # 完整重训与数值核验记录
+├── LICENSE                      # 本项目代码的 MIT 许可证
+├── THIRD_PARTY_NOTICES.md        # RAID 来源、引用与第三方许可
+├── LICENSES/
+│   └── RAID-MIT.txt             # 保留的 RAID 上游许可全文
 ├── settings.json                # 本研究的参数
 ├── requirements-lock.txt        # 固定依赖版本
 ├── check_project.py             # 文件及分阶段检查
@@ -55,7 +61,7 @@ aitextdetection/
 
 ## 在 Mac 上运行
 
-建议使用 Python 3.15.0，与参考数值生成时的 Python 版本一致。先解压，打开终端，进入项目目录。下面假定解压在“下载”目录；如果位置不同，可输入 `cd ` 后把文件夹拖入终端，再按回车。
+建议使用 Python 3.15.0，与参考数值生成时的 Python 版本一致。在 GitHub 仓库页面点击 **Code → Download ZIP**，解压后将文件夹命名为 `aitextdetection`，再打开终端。下面假定文件夹在“下载”目录；如果位置不同，可输入 `cd ` 后把文件夹拖入终端，再按回车。
 
 ```bash
 cd "$HOME/Downloads/aitextdetection"
@@ -180,3 +186,9 @@ Mistral 不参与训练准入判断，只出现在留出的生成器测试场景
 配对区间按来源关联的近重复组件进行 bootstrap，固定已训练模型、所选参数和阈值；它只描述当前测试组件的抽样波动，不包含重训和重新校准的全部不确定性。多个区间是逐项区间，不能当作已经进行了多重比较校正。
 
 实验能检查训练来源筛选与检测表现的关联，不能单独识别因果机制，也不能据此宣称通用检测可靠或已经达到发表标准。模型分数不是经过验证的作者身份概率，仍需在实际目标场景中另外校准与验证。
+
+## 许可与引用
+
+本项目代码采用 [MIT 许可证](LICENSE)，允许使用、修改和分发，包括商业使用；使用时需保留版权与许可声明。
+
+随包 RAID 数据保留上游版权与许可，来源、论文引用和许可全文见 [第三方说明](THIRD_PARTY_NOTICES.md) 与 [数据说明](data/README.md)。
